@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/listaImpasti">
+
+    <fragment
+        android:id="@+id/listaImpasti"
+        android:name="com.android.example.impastando.fragment.listaImpasti"
+        android:label="listaImpasti" >
+        <action
+            android:id="@+id/action_listaImpasti_to_impastopizza"
+            app:destination="@id/impastopizza" />
+    </fragment>
+    <fragment
+        android:id="@+id/impastopizza"
+        android:name="com.android.example.impastando.fragment.impastopizza"
+        android:label="fragment_impastopizza"
+        tools:layout="@layout/fragment_impastopizza" >
+        <action
+            android:id="@+id/action_impastopizza_to_listaImpasti"
+            app:destination="@id/listaImpasti" />
+    </fragment>
+</navigation>

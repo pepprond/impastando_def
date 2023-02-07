@@ -5,8 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.example.impastando.Adapter.ImpastiAdapter
+import com.android.example.impastando.Adapter.onItemClickView
+import com.android.example.impastando.R
 import com.android.example.impastando.databinding.FragmentListaImpastiBinding
 import com.android.example.impastando.dataclass.Impasti
 import com.android.example.impastando.dataclass.imageImpasti
@@ -30,7 +34,15 @@ class listaImpasti : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val listImp = listToShow(getdata())
-        val adapter = ImpastiAdapter(listImp)
+
+
+        val adapter = ImpastiAdapter(listImp, object : onItemClickView {
+            override fun onCardItemClick(position : Int) {
+
+                Toast.makeText(requireContext(),"Hai cliccato sulla posizione n $position",Toast.LENGTH_SHORT).show()
+            }
+
+        })
         binding.RVimpasti.adapter = adapter
         binding.RVimpasti.layoutManager = LinearLayoutManager(view.context)
         adapter.notifyDataSetChanged()

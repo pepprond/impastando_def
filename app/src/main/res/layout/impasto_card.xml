@@ -2,14 +2,16 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     android:layout_margin="10dp"
-    android:elevation="10dp"
-    app:cardCornerRadius="10dp"
     android:backgroundTint="@color/sabbia"
     android:clickable="true"
-    android:focusable="true">
+    android:elevation="10dp"
+    android:focusable="true"
+    app:cardCornerRadius="10dp">
+
     <ImageView
         android:id="@+id/imageImpasti"
         android:layout_width="100dp"
@@ -20,14 +22,13 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="130dp"
         android:id="@+id/nome_impasti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
         android:text="TextView"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        />
+        android:textSize="30sp"
+        android:textStyle="bold" />
 </androidx.cardview.widget.CardView>
