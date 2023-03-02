@@ -2,7 +2,7 @@ package com.android.example.impastando.dataclass
 
 import com.android.example.impastando.R
 
-data class Impasti(val image: imageImpasti,val type:String, val id: Int)
+data class Impasti(val image: imageImpasti,val type:String)
 
 enum class imageImpasti{
     FROLLA, PIZZA, CREPES;

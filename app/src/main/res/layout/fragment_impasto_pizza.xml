@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Impasto_pizza">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/pizz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="233dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Impasto Pizza"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/quanti_kg_di_pizza_nvuoi_fare"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:textColor="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/input_pizza"
+        android:layout_width="226dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="scrivi la quantità in grammi"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/output_pizza"
+        android:layout_width="348dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="84dp"
+        android:text=" "
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_pizza" />
+
+    <Button
+        android:id="@+id/button_calcolo_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/impasta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input_pizza"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,4 +13,13 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.Impastando.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Impastando.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Impastando.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

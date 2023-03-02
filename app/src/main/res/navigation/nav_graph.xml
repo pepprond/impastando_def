@@ -10,16 +10,31 @@
         android:name="com.android.example.impastando.fragment.listaImpasti"
         android:label="listaImpasti" >
         <action
-            android:id="@+id/action_listaImpasti_to_impastopizza"
-            app:destination="@id/impastopizza" />
+            android:id="@+id/action_listaImpasti_to_impasto_pizza"
+            app:destination="@id/impasto_pizza" />
+        <action
+            android:id="@+id/action_listaImpasti_to_impasto_frolla"
+            app:destination="@id/impasto_frolla" />
+        <action
+            android:id="@+id/action_listaImpasti_to_impasto_frolla2"
+            app:destination="@id/impasto_frolla" />
     </fragment>
     <fragment
-        android:id="@+id/impastopizza"
-        android:name="com.android.example.impastando.fragment.impastopizza"
-        android:label="fragment_impastopizza"
-        tools:layout="@layout/fragment_impastopizza" >
+        android:id="@+id/impasto_pizza"
+        android:name="com.android.example.impastando.fragment.Impasto_pizza"
+        android:label="fragment_impasto_pizza"
+        tools:layout="@layout/fragment_impasto_pizza" >
         <action
-            android:id="@+id/action_impastopizza_to_listaImpasti"
+            android:id="@+id/action_impasto_pizza_to_listaImpasti"
+            app:destination="@id/listaImpasti" />
+    </fragment>
+    <fragment
+        android:id="@+id/impasto_frolla"
+        android:name="com.android.example.impastando.fragment.Impasto_frolla"
+        android:label="fragment_impasto_frolla"
+        tools:layout="@layout/fragment_impasto_frolla" >
+        <action
+            android:id="@+id/action_impasto_frolla_to_listaImpasti"
             app:destination="@id/listaImpasti" />
     </fragment>
 </navigation>
