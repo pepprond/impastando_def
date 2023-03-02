@@ -68,7 +68,7 @@ fun getPercentualePizza(totale: Int): String {
     val Acqua = totale * 42.28 / 100
     val Lievito = totale * 1.13 / 100
     val Sale = totale * 0.22 / 100
-    return "Percentuali impasto:\n\nfarina(56,37%) grammi:${Farina.toFloat()}\n\nacqua(42,28%) grammi:${Acqua.toFloat()} \n\nlievito(1,13%) grammi:${Lievito.toFloat()}\n\nsale(0, 22 %) grammi :${Sale.toFloat()}"
+    return "Percentuali impasto:\n\nfarina(56,37%) grammi:${Farina.toFloat()}\n\nacqua(42,28%) grammi:${Acqua.toFloat()} \n\nlievito(1,13%) grammi:${Lievito.toFloat()}\n\nsale(0, 22 %) grammi:${Sale.toFloat()}"
 }
 
 
