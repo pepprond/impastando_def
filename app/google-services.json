@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "272960917763",
+    "project_id": "impastando-69453",
+    "storage_bucket": "impastando-69453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272960917763:android:ea1a8797e5e5338b411936",
+        "android_client_info": {
+          "package_name": "com.android.example.impastando"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272960917763-a2jpvpve4odk1aljdeutukic4p2jg5vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61POzkZ7zkRRlXK97ioWkkxDbZD_2Hx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272960917763-a2jpvpve4odk1aljdeutukic4p2jg5vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

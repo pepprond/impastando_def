@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import com.android.example.impastando.databinding.ActivityMainBinding
+import com.google.firebase.FirebaseApp
+import com.google.firebase.database.FirebaseDatabase
 
 
 class MainActivity : AppCompatActivity() {
