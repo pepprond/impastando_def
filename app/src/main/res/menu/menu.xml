@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/listaImpasti"
+        android:icon="@drawable/lista_icona"
+        android:title="Lista Impasti" />
+
+    <item
+        android:id="@+id/profilo"
+        android:icon="@drawable/profilo_icona"
+        android:title="Account" />
+
+    <item
+        android:id="@+id/impostazioni"
+        android:icon="@drawable/impostazioni"
+        android:title="Impostazioni" />
+
+    <item
+        android:id="@+id/cerca"
+        android:icon="@drawable/cerca_icona"
+        android:title="Cerca Ricetta"/>
+
+    <item
+        android:id="@+id/preferiti"
+        android:icon="@drawable/baseline_star_24"
+        android:title="preferiti"/>
+
+</menu>

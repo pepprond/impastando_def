@@ -8,13 +8,13 @@
     tools:context=".Register_Activity">
 
     <TextView
-        android:inputType="textEmailAddress"
         android:id="@+id/sing_in_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="24dp"
+        android:inputType="textEmailAddress"
         android:text="Registrati"
         android:textColor="@color/black"
         android:textSize="35sp"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:drawableLeft="@drawable/user"
         android:drawablePadding="10dp"
@@ -58,29 +58,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_iscrizione" />
 
+    <EditText
+        android:id="@+id/conferma_password_iscrizione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:hint="@string/confermapas"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_iscrizione" />
+
     <TextView
         android:id="@+id/accedi"
         android:layout_width="148dp"
         android:layout_height="43dp"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="150dp"
         android:text="hai un account? Accedi"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_iscrizione" />
+        app:layout_constraintTop_toBottomOf="@+id/button_registra" />
 
     <Button
         android:id="@+id/button_registra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
         android:text="Registra"
-        app:layout_constraintTop_toBottomOf="@+id/password_iscrizione"
-        tools:layout_editor_absoluteX="158dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conferma_password_iscrizione" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

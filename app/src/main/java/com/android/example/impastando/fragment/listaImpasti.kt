@@ -61,8 +61,8 @@ class listaImpasti : Fragment() {
 
 private fun listToShow(impasti: List<Impasti>): MutableList<Impasti> {
     val listToReturn = mutableListOf<Impasti>()
-    listToReturn.add(Impasti(imageImpasti.FROLLA,"Impasto Frolla"))
-    listToReturn.add(Impasti(imageImpasti.PIZZA,"Impasto Pizza"))
-    listToReturn.add(Impasti(imageImpasti.CREPES,"Impasto Crepes"))
+    listToReturn.add(Impasti(imageImpasti.FROLLA,"Impasto Frolla",id =1))
+    listToReturn.add(Impasti(imageImpasti.PIZZA,"Impasto Pizza",id=2))
+    listToReturn.add(Impasti(imageImpasti.CREPES,"Impasto Crepes",id=3))
     return listToReturn
 }
