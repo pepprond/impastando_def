@@ -7,12 +7,17 @@
     android:id="@+id/container"
     >
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph" />
+        android:layout_height="674dp"
+        android:layout_above="@+id/nav_bar"
+        android:layout_marginBottom="1dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/impasto_card"
+
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_bar"

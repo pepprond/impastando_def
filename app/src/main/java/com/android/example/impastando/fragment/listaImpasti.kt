@@ -34,20 +34,25 @@ class listaImpasti : Fragment() {
         binding = FragmentListaImpastiBinding.inflate(inflater, container, false)
         return binding.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val listImp = listToShow(getdata())
 
 
         val adapter = ImpastiAdapter(listImp, object : onItemClickView {
-            override fun onCardItemClick(position : Int) {
-                Toast.makeText(requireContext(),"Hai cliccato sulla posizione n $position",Toast.LENGTH_SHORT).show()
-                when(position){
+            override fun onCardItemClick(position: Int) {
+                Toast.makeText(
+                    requireContext(),
+                    "Hai cliccato sulla posizione n $position",
+                    Toast.LENGTH_SHORT
+                ).show()
+                when (position) {
                     0 -> findNavController().navigate(R.id.action_listaImpasti_to_impasto_frolla)
                     1 -> findNavController().navigate(R.id.action_listaImpasti_to_impasto_pizza)
                 }
 
 
-                }
+            }
 
 
         })
@@ -59,10 +64,10 @@ class listaImpasti : Fragment() {
 
 }
 
-private fun listToShow(impasti: List<Impasti>): MutableList<Impasti> {
+fun listToShow(impasti: List<Impasti>): MutableList<Impasti> {
     val listToReturn = mutableListOf<Impasti>()
-    listToReturn.add(Impasti(imageImpasti.FROLLA,"Impasto Frolla",id =1))
-    listToReturn.add(Impasti(imageImpasti.PIZZA,"Impasto Pizza",id=2))
-    listToReturn.add(Impasti(imageImpasti.CREPES,"Impasto Crepes",id=3))
+    listToReturn.add(Impasti(imageImpasti.FROLLA, "Impasto Frolla", id = 1))
+    listToReturn.add(Impasti(imageImpasti.PIZZA, "Impasto Pizza", id = 2))
+    listToReturn.add(Impasti(imageImpasti.CREPES, "Impasto Crepes", id = 3))
     return listToReturn
 }
